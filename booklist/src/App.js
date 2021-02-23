@@ -5,18 +5,7 @@ import axios from 'axios';
 import ThemeContextProvider from './contexts/ThemeContext';
 
 export default class App extends React.Component {
-  // constructor(props){
-  //   super(props);
-  //   this.state = {
-  //     books: {
-  //       "name":'',
-  //       "price":'',
-  //       "category":'',
-  //       "des":''
-  //     }
-  //   }
 
-  // }
   render(){
     return (
       <div className="App">

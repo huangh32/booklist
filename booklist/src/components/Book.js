@@ -135,17 +135,7 @@ export default class Book extends React.Component {
     render(){
         let books = this.state.books.map((i) =>{
             return (
-            // <tr key = {i.id}>
-            //     <td>{i.volumeInfo.title}</td>
-            //     <td>{i.saleInfo.saleability} CAD</td>
-            //     <td>{i.volumeInfo.categories}</td>
-            //     <td>{i.volumeInfo.description}</td>
-            //     <td>
-            //         <Button color = "primary" size="sm" className = "mr-2" active >Edit</Button>
-                    
-            //         <Button color = "danger" size = "sm" active>Delete</Button>
-            //     </td>
-            // </tr>
+
             <tr key={i.id}>
                 <td >{i.name}</td>
                 <td>{i.price} </td>
@@ -204,7 +194,7 @@ export default class Book extends React.Component {
 
                 </ModalBody>
                 <ModalFooter>
-                <Button color="primary" onClick={this.confirmAdded}>Confirm Added</Button>{' '}
+                <Button color="primary" onClick={this.confirmAdded}>Confirm Added</Button>
                 <Button color="secondary" onClick={this.addNew} >Cancel</Button>
                 </ModalFooter>
             </Modal>
@@ -250,7 +240,7 @@ export default class Book extends React.Component {
 
                 </ModalBody>
                 <ModalFooter>
-                <Button color="primary" onClick={this.update}>Updated</Button>{' '}
+                <Button color="primary" onClick={this.update}>Updated</Button>
                 <Button color="secondary" onClick={this.toggleEdit} >Cancel</Button>
                 </ModalFooter>
             </Modal>
